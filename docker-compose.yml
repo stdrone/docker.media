@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    homexfce4:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: homex
+        restart: always
+        expose:
+          - 3389
+        ports:
+          - "3389:3389"
